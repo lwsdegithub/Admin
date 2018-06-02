@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ywh.admin.activity.MainActivity">
+    <Button
+    android:id="@+id/btn_1"
+    android:text="处理举报信息"
+    android:background="@drawable/bg_btn"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_2"
+        android:text="处理信誉分过低用户"
+        android:background="@drawable/bg_btn"
+        android:layout_below="@id/btn_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

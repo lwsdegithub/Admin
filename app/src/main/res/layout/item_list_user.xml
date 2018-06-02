@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_item_user_head_icon"
+            android:layout_width="50dp"
+            android:layout_margin="7dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="头号玩家"
+            android:maxEms="4"
+            android:ellipsize="end"
+            android:id="@+id/tv_item_user_name"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/civ_item_user_head_icon"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="信誉分：30"
+            android:textSize="15sp"
+            android:id="@+id/tv_item_credit"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_item_user_name"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="停用"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btn_item"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>
