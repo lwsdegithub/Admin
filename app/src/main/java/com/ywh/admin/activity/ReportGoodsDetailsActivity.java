@@ -164,7 +164,7 @@ public class ReportGoodsDetailsActivity extends AppCompatActivity implements Swi
         int id=item.getItemId();
         switch (id){
             case R.id.item_true:
-            new AlertDialog.Builder(this).setTitle("举报属实").setMessage("将删除这个帖子，请确认！").setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            new AlertDialog.Builder(this).setTitle("举报属实").setMessage("将删除这个帖子，并扣除发帖人信誉分，请确认！").setPositiveButton("确定", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     //删除这个物品,由于数据库为CASCADE，级联删除，所以删除物品时所有的举报信息都会被删除
